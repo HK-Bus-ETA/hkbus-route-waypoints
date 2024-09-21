@@ -52,12 +52,12 @@ for feature in data["features"]:
   with open("waypoints/"+str(properties["ROUTE_ID"])+"-"+("O" if properties["ROUTE_SEQ"] == 1 else "I")+".json", "w", encoding='utf-8') as f:
     f.write(
       re.sub(
-        r"([0-9]+\.[0-9]{5})[0-9]+", 
-        r"\1", 
+        r"([0-9]+\.[0-9]{5})[0-9]+",
+        r"\1",
         json.dumps({
             "features": [feature],
             "type": "FeatureCollection"
-          }, 
+          },
           ensure_ascii=False,
           separators=(",", ":")
         )
