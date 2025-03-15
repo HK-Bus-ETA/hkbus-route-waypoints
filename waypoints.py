@@ -93,6 +93,6 @@ for file in glob.glob(r'./mtr/*.json'):
 for file in glob.glob(r'./lrt/*.json'):
     shutil.copy(file, "waypoints")
 for file in glob.glob(r'./ferry/*.json'):
-  shutil.copy(file, "waypoints")
+    shutil.copy(file, "waypoints")
 for file in glob.glob(r'./mtr-bus/*.json'):
-  shutil.copy(file, "waypoints")
+    shutil.copy(file, "waypoints")
